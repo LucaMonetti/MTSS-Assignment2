@@ -5,4 +5,12 @@
     <module name="RegexpHeader">
         <property name="headerFile" value="${checkstyle.header.file}"/>
     </module>
+    <module name="NeedBraces"/>
+    <module name="IllegalImport"/>
+    <module name="AvoidStarImport"/>
+    <module name="FileTabCharacter"/>
+    <module name="EmptyCatchBlock"/>
+    <module name="MethodLength">
+      <property name="max" value="4"/>
+    </module>
 </module>
