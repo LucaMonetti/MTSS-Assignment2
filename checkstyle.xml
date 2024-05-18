@@ -5,15 +5,15 @@
     <module name="RegexpHeader">
         <property name="headerFile" value="${checkstyle.header.file}"/>
     </module>
-    <module name="BooleanExpressionComplexity"/>
     <module name="FileLength"/>
     <module name="LineLength"/>
-    <module name="NeedBraces"/>
-    <module name="IllegalImport"/>
-    <module name="AvoidStarImport"/>
     <module name="FileTabCharacter"/>
-    <module name="EmptyCatchBlock"/>
-    <module name="MethodLength">
-      <property name="max" value="4"/>
+    <module name="TreeWalker">
+        <module name="BooleanExpressionComplexity"/>
+        <module name="NeedBraces"/>
+        <module name="IllegalImport"/>
+        <module name="AvoidStarImport"/>
+        <module name="EmptyCatchBlock"/>
+        <module name="MethodLength" />
     </module>
 </module>
