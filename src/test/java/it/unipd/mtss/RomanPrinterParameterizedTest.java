@@ -30,6 +30,12 @@ public class RomanPrinterParameterizedTest {
                         "   | |      | |   \n" +
                         "  _| |_    _| |_  \n" +
                         " |_____|  |_____| \n" },
+                {5, "__      __\n" +
+                        "\\ \\    / /\n" +
+                        " \\ \\  / / \n" +
+                        "  \\ \\/ /  \n" +
+                        "   \\  /   \n" +
+                        "    \\/    \n"}
         });
     }
 
@@ -39,7 +45,7 @@ public class RomanPrinterParameterizedTest {
             String res = RomanPrinter.print(input);
             assertEquals(expectedOutput, res);
         } catch (Exception e) {
-            System.out.println("Errore");
+            System.out.println(e.getMessage());
         }
     }
 }

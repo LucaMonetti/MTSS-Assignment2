@@ -22,6 +22,14 @@ public class RomanPrinter {
                 "  _| |_  ",
                 " |_____| "
         });
+        out.put('V', new String[]{
+                "__      __",
+                "\\ \\    / /",
+                " \\ \\  / / ",
+                "  \\ \\/ /  ",
+                "   \\  /   ",
+                "    \\/    ",
+        });
 
         return out;
     }
