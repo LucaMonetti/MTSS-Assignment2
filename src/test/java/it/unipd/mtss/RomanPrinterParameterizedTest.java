@@ -23,6 +23,7 @@ public class RomanPrinterParameterizedTest {
     @Parameterized.Parameters
     public static Collection testConditions() {
         return Arrays.asList(new Object[][] {
+                {0, ""},
                 { 1,    "  _____  \n |_   _| \n   | |   \n   | |   \n  _| |_  \n |_____| \n" },
                 { 2,    "  _____    _____  \n" +
                         " |_   _|  |_   _| \n" +
@@ -71,7 +72,13 @@ public class RomanPrinterParameterizedTest {
                         " | |  | |\n" +
                         " | |  | |\n" +
                         " | |__| |\n" +
-                        " |_____/ \n"}
+                        " |_____/ \n"},
+                {1000, "  __  __ \n" +
+                        " |  \\/  |\n" +
+                        " | \\  / |\n" +
+                        " | |\\/| |\n" +
+                        " | |  | |\n" +
+                        " |_|  |_|\n"}
         });
     }
 

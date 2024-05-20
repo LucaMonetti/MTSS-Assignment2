@@ -12,6 +12,6 @@ package it.unipd.mtss;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        System.out.println( RomanPrinter.print(500) );
+        System.out.println( RomanPrinter.print(0) );
     }
 }
