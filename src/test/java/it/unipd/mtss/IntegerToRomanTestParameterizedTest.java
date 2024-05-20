@@ -47,7 +47,12 @@ public class IntegerToRomanTestParameterizedTest {
              { 150, "CL"},
              { 250, "CCL"},
              { 350, "CCCL"},
-             { 450, "CDL"}
+             { 450, "CDL"},
+             { 550, "DL"},
+             { 650, "DCL"},
+             { 750, "DCCL"},
+             { 850, "DCCCL"},
+             { 950, "CML"}
             });
 
 }

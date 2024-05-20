@@ -39,6 +39,14 @@ public class IntegerToRoman {
         out.put(300, "CCC");
         out.put(400, "CD");
         out.put(500, "D");
+
+        out.put(600, "DC");
+        out.put(700, "DCC");
+        out.put(800, "DCCC");
+        out.put(900, "CM");
+        out.put(1000, "M");
+
+
         
 
 
@@ -49,16 +57,20 @@ public class IntegerToRoman {
 
     public static String convert(int number) throws Exception{
 
-        if(number <= 0 || number > 500){
+        if(number <= 0 || number > 1000){
             throw new Exception("Il numero non può essere convertito");
             
         }
+        int migliaia = number / 1000;
+        number = number % 1000;
         int centinaia = number / 100;
         number = number % 100;
         int decine = number / 10;
         int unita = number % 10;
 
         String r = "";
+        r = r + ((migliaia > 0) ? table.get(migliaia * 1000): "");
+
         r = r + ((centinaia > 0) ? table.get(centinaia * 100): "");
 
         r = r + ((decine > 0) ? table.get(decine * 10): "");
