@@ -16,12 +16,16 @@ public class IntegerToRoman {
         out.put(1, "I");
         out.put(2, "II");
         out.put(3, "III");
+        out.put(4, "IV");
+        out.put(5, "V");
+        out.put(6, "VI");
+
 
         return out;
     }
 
     public static String convert(int number) throws Exception{
-        if(number > 0 && number <= 3){
+        if(number > 0 && number <= 6){
             return table.get(number);
         }
         else{
