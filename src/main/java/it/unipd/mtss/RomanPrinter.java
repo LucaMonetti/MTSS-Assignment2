@@ -38,6 +38,14 @@ public class RomanPrinter {
                 " / . \\ ",
                 "/_/ \\_\\"
         });
+        out.put('L', new String[]{
+                "  _      ",
+                " | |     ",
+                " | |     ",
+                " | |     ",
+                " | |____ ",
+                " |______|",
+        });
 
         return out;
     }
