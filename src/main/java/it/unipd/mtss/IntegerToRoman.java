@@ -26,6 +26,9 @@ public class IntegerToRoman {
         out.put(10, "X");
 
         out.put(20, "XX");
+        out.put(30, "XXX");
+        out.put(40, "XL");
+        out.put(50, "L");
 
 
 

@@ -31,7 +31,14 @@ public class IntegerToRomanTestParameterizedTest {
              { 7, "VII"},
              { 10, "X" },
              { 13, "XIII"},
-             { 20, "XX"}});
+             { 20, "XX"},
+             { 24, "XXIV"},
+             { 30, "XXX"},
+             { 35, "XXXV"},
+             { 40, "XL"},
+             { 45, "XLV"},
+             { 50, "L"}
+            });
 
 }
     
