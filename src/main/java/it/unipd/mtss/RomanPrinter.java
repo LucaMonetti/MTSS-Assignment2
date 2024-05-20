@@ -30,6 +30,14 @@ public class RomanPrinter {
                 "   \\  /   ",
                 "    \\/    ",
         });
+        out.put('X', new String[]{
+                "__   __",
+                "\\ \\ / /",
+                " \\ V / ",
+                "  > <  ",
+                " / . \\ ",
+                "/_/ \\_\\"
+        });
 
         return out;
     }
