@@ -29,6 +29,11 @@ public class IntegerToRoman {
         out.put(30, "XXX");
         out.put(40, "XL");
         out.put(50, "L");
+        out.put(60, "LX");
+        out.put(70, "LXX");
+        out.put(80, "LXXX");
+        out.put(90, "XC");
+        out.put(100, "C");
 
 
 
@@ -38,15 +43,17 @@ public class IntegerToRoman {
 
     public static String convert(int number) throws Exception{
 
-        if(number <= 0 || number > 10){
+        if(number <= 0 || number > 100){
             throw new Exception("Il numero non può essere convertito");
             
         }
-
+        int centinaia = number / 100;
         int decine = number / 10;
         int unita = number % 10;
 
         String r = "";
+        r = r + ((centinaia > 0) ? table.get(centinaia * 100): "");
+
         r = r + ((decine > 0) ? table.get(decine * 10): "");
 
         r = r + ((unita > 0) ? table.get(unita): "");

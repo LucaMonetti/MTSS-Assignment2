@@ -37,7 +37,13 @@ public class IntegerToRomanTestParameterizedTest {
              { 35, "XXXV"},
              { 40, "XL"},
              { 45, "XLV"},
-             { 50, "L"}
+             { 50, "L"},
+             { 55, "LV"},
+             { 60, "LX"},
+             { 65, "LXV"},
+             { 75, "LXXV"},
+             { 85, "LXXXV"},
+             { 95, "XCV"}
             });
 
 }
