@@ -49,7 +49,7 @@ public class IntegerToRomanTestParameterizedTest {
             String res = IntegerToRoman.convert(input);
             assertEquals(expectedOutput, res);
         } catch (Exception e) {
-            System.out.println("Errore");
+            System.out.println(e.getMessage());
         }
     }
 
