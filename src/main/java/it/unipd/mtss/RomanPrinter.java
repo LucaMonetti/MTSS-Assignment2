@@ -46,6 +46,14 @@ public class RomanPrinter {
                 " | |____ ",
                 " |______|",
         });
+        out.put('C', new String[]{
+                "   _____ ",
+                "  / ____|",
+                " | |     ",
+                " | |     ",
+                " | |____ ",
+                "  \\_____|"
+        });
 
         return out;
     }
