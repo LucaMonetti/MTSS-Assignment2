@@ -35,6 +35,12 @@ public class IntegerToRoman {
         out.put(90, "XC");
         out.put(100, "C");
 
+        out.put(200, "CC");
+        out.put(300, "CCC");
+        out.put(400, "CD");
+        out.put(500, "D");
+        
+
 
 
 
@@ -43,11 +49,12 @@ public class IntegerToRoman {
 
     public static String convert(int number) throws Exception{
 
-        if(number <= 0 || number > 100){
+        if(number <= 0 || number > 500){
             throw new Exception("Il numero non può essere convertito");
             
         }
         int centinaia = number / 100;
+        number = number % 100;
         int decine = number / 10;
         int unita = number % 10;
 
