@@ -29,8 +29,9 @@ public class IntegerToRomanTestParameterizedTest {
              { 2, "II"}, 
              { 5, "V" }, 
              { 7, "VII"},
-             { 10, "X" }});
-
+             { 10, "X" },
+             { 13, "XIII"},
+             { 20, "XX"}});
 
 }
     
