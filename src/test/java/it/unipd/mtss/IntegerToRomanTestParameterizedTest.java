@@ -26,8 +26,11 @@ public class IntegerToRomanTestParameterizedTest {
     public static Collection testConditions() {
        return Arrays.asList(new Object[][] { 
              { 1, "I" }, 
-             { 2, "II" }, 
-             { 5, "V" } });
+             { 2, "II"}, 
+             { 5, "V" }, 
+             { 7, "VII"},
+             { 10, "X" }});
+
 
 }
     

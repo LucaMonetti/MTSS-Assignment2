@@ -19,13 +19,17 @@ public class IntegerToRoman {
         out.put(4, "IV");
         out.put(5, "V");
         out.put(6, "VI");
+        out.put(7, "VII");
+        out.put(8, "VIII");
+        out.put(9, "IX");
+        out.put(10, "X");
 
 
         return out;
     }
 
     public static String convert(int number) throws Exception{
-        if(number > 0 && number <= 6){
+        if(number > 0 && number <= 10){
             return table.get(number);
         }
         else{
